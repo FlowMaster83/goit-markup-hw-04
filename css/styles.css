@@ -229,6 +229,12 @@ border-bottom: 1px solid #ececec;
     padding: 200px 0;
 }
 
+.hero-image {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../img/people-working.jpg');
+    background-size: cover;
+}
+
 .solutions-main-caption {
     width: 696px;
     justify-content: center;
@@ -341,6 +347,46 @@ border-bottom: 1px solid #ececec;
 }
 
 /* Наша команда */
+
+.vector-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.social-list-item {
+    margin-bottom: 30px;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--blue);
+    fill: var(--white);
+}
 
 .section-team {
     background: var(--background-for-section-team)
