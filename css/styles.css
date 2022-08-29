@@ -121,6 +121,9 @@ border-bottom: 1px solid #ececec;
     padding-top: 0;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
+    width: auto;
+    height: 80px;
 }
 
 .flex-for-nav {
@@ -159,8 +162,6 @@ border-bottom: 1px solid #ececec;
 
 /* Контакти хедера */
 
-
-
 .flex-for-contact-to {
     display: flex;
     margin-left: auto;
@@ -172,8 +173,8 @@ border-bottom: 1px solid #ececec;
 }
 
 .contact-to {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    display: block;
+    margin-right: 30px;
     margin-left: auto;
     font-weight: 500;
     padding-top: 32px;
@@ -186,36 +187,30 @@ border-bottom: 1px solid #ececec;
 
 .contact-to:hover,
 .contact-to:focus {
-    color: var(--accent-color);
-}
-
-.header-svg {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    cursor: pointer;
-    margin-right: 10px;
+    color: var(--blue);
 }
 
 .smartphone {
     display: flex;
     width: 10px;
     height: 16px;
-    gap: 10px;
+    margin-right: 10px;
+    fill: #757575;
 }
 
 .envelope {
     display: flex;
     width: 16px;
     height: 12px;
-    margin-left: 30px;
-    gap: 10px;
+    margin-right: 10px;
+    fill: #757575;
 }
 
-.header-svg:hover,
-.header-svg:focus {
+.smartphone .envelope:hover,
+.smartphone .envelope:focus {
     fill: var(--blue);
 }
+
 
 /* Контакти футера */
 
@@ -254,13 +249,11 @@ border-bottom: 1px solid #ececec;
 .all-socials {
     display: block;
     margin-left: 70px;
-    padding-top: 12px;
 }
 
 .all-footer-positions {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .footer-social {
@@ -335,6 +328,9 @@ border-bottom: 1px solid #ececec;
 
 .hero {
     text-align: center;
+    max-width: 1660px;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--white-not-transparent);
     background-color: var(--background);
     padding: 200px 0;
@@ -376,7 +372,9 @@ border-bottom: 1px solid #ececec;
     background-color: var(--blue-for-modal-button);
     cursor: pointer;
     border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 10px 32px;
 }
 
 .modal-button:hover,
@@ -401,6 +399,13 @@ border-bottom: 1px solid #ececec;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.benefits-vectors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .benefits-list {
@@ -434,6 +439,7 @@ border-bottom: 1px solid #ececec;
 
 .activites {
     background: var(--white);
+    padding-top: 0;
 }
 
 .activities-caption {
@@ -488,9 +494,6 @@ border-bottom: 1px solid #ececec;
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-}
-
-.social-list-item {
     margin-bottom: 30px;
 }
 
@@ -562,7 +565,7 @@ border-bottom: 1px solid #ececec;
 }
 
 .position-member-team {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -570,14 +573,29 @@ border-bottom: 1px solid #ececec;
 }
 
 .regular-customer {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    color: #212121;
 }
 
 .cust-vect {
     display: flex;
     flex-basis: calc((100% - 150px) / 6);
+    gap: 30px;
+}
+.customer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
@@ -648,6 +666,7 @@ border-bottom: 1px solid #ececec;
 
 .flex-for-all-buttons {
     padding-top: auto;
+    margin-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -681,6 +700,7 @@ border-bottom: 1px solid #ececec;
 }
 
 .projects-link {
+    display: block;
     text-decoration: none;
 }
 
@@ -690,10 +710,9 @@ border-bottom: 1px solid #ececec;
     justify-content: center;
     align-items: center;
     flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid #EEEEEE;
 }
 
-.projects-list:hover {
+.projects-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
