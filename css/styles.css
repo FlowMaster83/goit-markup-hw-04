@@ -89,6 +89,10 @@ span {
     text-decoration: none;
 }
 
+.for-logo {
+    margin-bottom: 20px;
+}
+
 .logo-web-footer {
     margin-bottom: 20px;
     align-items: center;
@@ -173,7 +177,7 @@ border-bottom: 1px solid #ececec;
 }
 
 .contact-to {
-    display: block;
+    display: flex;
     margin-right: 30px;
     margin-left: auto;
     font-weight: 500;
@@ -191,23 +195,21 @@ border-bottom: 1px solid #ececec;
 }
 
 .smartphone {
-    display: flex;
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;
 }
 
 .envelope {
-    display: flex;
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;
 }
 
-.smartphone .envelope:hover,
-.smartphone .envelope:focus {
+.smartphone:hover .envelope,
+.smartphone:focus .envelope {
     fill: var(--blue);
 }
 
@@ -272,7 +274,7 @@ border-bottom: 1px solid #ececec;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white)
+    color: var(--white);
 }
 
 .footer-social-list {
@@ -340,6 +342,9 @@ border-bottom: 1px solid #ececec;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../img/people-working.jpg');
     background-size: cover;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .solutions-main-caption {
@@ -438,7 +443,6 @@ border-bottom: 1px solid #ececec;
 /* Чим ми займаємось */
 
 .activites {
-    background: var(--white);
     padding-top: 0;
 }
 
@@ -572,7 +576,13 @@ border-bottom: 1px solid #ececec;
     color: var(--grey);
 }
 
+
+/* Постійні клієнти */
+
 .regular-customer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
     font-family: 'Roboto', 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -581,10 +591,7 @@ border-bottom: 1px solid #ececec;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    color: #212121;
+
 }
 
 .cust-vect {
@@ -712,7 +719,8 @@ border-bottom: 1px solid #ececec;
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.projects-link:hover {
+.projects-link:hover,
+.projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
