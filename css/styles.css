@@ -64,6 +64,7 @@ ul, ol {
     margin-right: auto;
 }
 
+
 /* логотип */
 
 .logo-web-header {
@@ -90,14 +91,13 @@ span {
 }
 
 .for-logo {
-    font-family: 'Raleway', sans-serif;
     margin-bottom: 20px;
     text-decoration: none;
 }
 
-
 .logo-web-footer {
     margin-bottom: 20px;
+    font-style: normal;
     align-items: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -327,7 +327,9 @@ border-bottom: 1px solid #ececec;
     fill: var(--white);
 }
 
+
 /* ГОЛОВНА */
+
 
 /* Ефективні рішення для вашого бізнесу */
 
@@ -366,6 +368,7 @@ border-bottom: 1px solid #ececec;
     text-transform: uppercase;
     color: var(--white);
 }
+
 
 /* Кнопка "Замовити послугу" */
 
@@ -470,6 +473,7 @@ border-bottom: 1px solid #ececec;
 .activities-points {
     flex-basis: calc((100% - 60px) / 3);
 }
+
 
 /* Наша команда */
 
@@ -643,7 +647,9 @@ border-bottom: 1px solid #ececec;
     fill: var(--blue);
 }
 
+
 /* ПОРТФОЛІО */
+
 
 /* Кнопки */
 
