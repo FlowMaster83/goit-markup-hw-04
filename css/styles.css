@@ -523,7 +523,7 @@ border-bottom: 1px solid #ececec;
 .social-list-icon {
     width: 20px;
     height: 20px;
-    fill: var(--another-grey);
+    fill: inherit;
 }
 
 
