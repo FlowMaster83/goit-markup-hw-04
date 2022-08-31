@@ -96,7 +96,6 @@ span {
 }
 
 .logo-web-footer {
-    margin-bottom: 20px;
     font-style: normal;
     align-items: center;
     font-family: 'Raleway', sans-serif;
@@ -219,6 +218,8 @@ span {
 /* Контакти футера */
 
 .background-footer {
+    display: flex;
+    align-items: baseline;
     background: var(--background);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -250,20 +251,13 @@ span {
 
 /* SVG для футера */
 
-.all-socials {
-    display: block;
-    margin-left: 70px;
-}
-
 .all-footer-positions {
     display: flex;
     align-items: baseline;
 }
 
-.footer-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-socials {
+    margin-left: 70px;
 }
 
 .connection {
@@ -281,8 +275,8 @@ span {
 
 .footer-social-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: baseline;
     column-gap: 10px;
     border-radius: 50%;
 }
