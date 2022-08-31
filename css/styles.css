@@ -178,10 +178,6 @@ span {
     margin-left: auto;
 }
 
-.contact-list {
-    margin-right: 30px;
-}
-
 .contact-to {
     display: flex;
     align-items: center;
@@ -686,7 +682,6 @@ span {
 
 .flex-for-all-buttons {
     padding-top: auto;
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -726,7 +721,6 @@ span {
 
 .projects-list {
     background-color: var(--white-not-transparent);
-    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     flex-basis: calc((100% - 60px) / 3);
