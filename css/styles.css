@@ -121,15 +121,13 @@ span {
 /* Навігація хедера */
 
 .header-styles {
-border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    width: auto;
 }
 
 .flex-for-header {
-    padding-top: 0;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
-    width: auto;
     height: 80px;
 }
 
@@ -172,6 +170,7 @@ border-bottom: 1px solid #ececec;
 .flex-for-contact-to {
     display: flex;
     margin-left: auto;
+    gap: 30px;
 }
 
 .contact-list:not(:first-child) {
@@ -179,9 +178,13 @@ border-bottom: 1px solid #ececec;
     margin-left: auto;
 }
 
+.contact-list {
+    margin-right: 30px;
+}
+
 .contact-to {
     display: flex;
-    margin-right: 30px;
+    align-items: center;
     margin-left: auto;
     font-weight: 500;
     padding-top: 32px;
