@@ -92,7 +92,6 @@ span {
 
 .for-logo {
     margin-bottom: 20px;
-    text-decoration: none;
 }
 
 .logo-web-footer {
@@ -246,18 +245,16 @@ span {
 
 .flex-for-address:not(:last-child) {
     margin-bottom: 9px;
+    white-space: nowrap;
 }
-
-
-/* SVG для футера */
 
 .all-footer-positions {
     display: flex;
     align-items: baseline;
 }
 
-.footer-socials {
-    margin-left: 70px;
+.left-side-footer {
+    margin-right: 70px;
 }
 
 .connection {
